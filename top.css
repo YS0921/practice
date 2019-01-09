@@ -1,7 +1,21 @@
+@charset "UTF-8";
 body {
+  /* ここから共通設定 */
   background-color: gray;
   margin: 0;
-  height: 10000px; }
+  height: 10000px;
+  /* ここからheader */
+  /* ここからカルーセル */
+  /* ここからfooter */ }
+  body .inner {
+    width: 1280px;
+    margin: auto; }
+  body li {
+    list-style: none;
+    float: left; }
+  body a {
+    color: black;
+    text-decoration: none; }
   body header {
     float: top;
     width: 100%;
@@ -21,19 +35,10 @@ body {
       margin: 0 0 0 -110px;
       line-height: 138px;
       text-align: center; }
-    body header li {
-      float: left;
-      list-style: none; }
-    body header a {
-      color: black;
-      text-decoration: none; }
-    body header .inner {
-      width: 1280px;
-      margin: 0 auto; }
     body header .header-menu {
       padding-top: 56px;
       padding-left: 0;
-      margin: 0 auto;
+      margin: auto;
       text-align: center; }
     body header .header-left {
       float: left; }
@@ -46,10 +51,33 @@ body {
     body header .small-link {
       font-size: 13px;
       border: 1px solid black;
-      padding: 5px;
+      padding: 0;
       margin-top: -13px; }
+    body header .small-link a {
+      display: block;
+      padding: 5px; }
     body header .icon-link {
       font-size: 30px;
       margin: 0 0 0 30px; }
+  body .carousel {
+    height: 500px;
+    background-color: gray; }
+  body footer {
+    background-color: white;
+    height: 196px;
+    padding: 0 0 53px 0; }
+    body footer ul {
+      width: 400px;
+      /* 子要素がfloatしてるのでulに高さはない */
+      margin: auto; }
+    body footer li {
+      padding: 0 45px; }
+    body footer i {
+      font-size: 44px; }
+    body footer h1 {
+      clear: both;
+      text-align: center; }
+    body footer .sns {
+      padding: 53px 0; }
 
 /*# sourceMappingURL=top.css.map */

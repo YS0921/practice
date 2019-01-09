@@ -1,8 +1,28 @@
 body {
+    
+    /* ここから共通設定 */
+    
     background-color: gray;
     margin: 0;
     height: 10000px;
     
+    .inner {
+        width: 1280px;
+        margin: auto;
+    }
+    
+    li {
+        list-style: none;
+        float: left;
+    }
+    
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    /* ここからheader */
+        
     header {
         float: top;
         width: 100%;
@@ -26,25 +46,10 @@ body {
             
         }
         
-        li {
-            float: left;
-            list-style: none;
-        }
-        
-        a {
-            color: black;
-            text-decoration: none;
-        }
-        
-        .inner {
-            width: 1280px;
-            margin: 0 auto;
-        }
-        
         .header-menu {
             padding-top: 56px;
             padding-left: 0;
-            margin: 0 auto;
+            margin: auto;
             text-align: center;
         }
         
@@ -67,8 +72,13 @@ body {
         .small-link {
             font-size: 13px;
             border: 1px solid black;
-            padding: 5px;
+            padding: 0;
             margin-top: -13px;
+        }
+        
+        .small-link a {
+            display: block;
+            padding: 5px;
         }
         
         .icon-link {
@@ -76,6 +86,43 @@ body {
             margin: 0 0 0 30px;
         }
         
+    }
+    
+    /* ここからカルーセル */
+    
+    .carousel {
+        height: 500px;
+        background-color: gray;
+    }
+    
+    /* ここからfooter */
+    
+    footer {
+        background-color: white;
+        height: 196px;
+        padding: 0 0 53px 0;
+        
+        ul {
+            width: 400px; /* 子要素がfloatしてるのでulに高さはない */
+            margin: auto;
+        }
+        
+        li {
+            padding: 0 45px;
+        }
+        
+        i {
+            font-size: 44px;
+        }
+        
+        h1 {
+            clear: both;
+            text-align: center;
+        }
+        
+        .sns {
+            padding: 53px 0;
+        }
     }
     
 }
