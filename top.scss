@@ -13,7 +13,6 @@ body {
     
     li {
         list-style: none;
-        float: left;
     }
     
     a {
@@ -24,15 +23,15 @@ body {
     /* ここからheader */
         
     header {
-        float: top;
         width: 100%;
         height: 138px;
         font-family: sans-serif;
         font-size: 14px;
         letter-spacing: 1px;
         background-color: rgba(255, 255, 255, 0.6);
-        margin: 0;
         position: fixed;
+        top: 0;
+        z-index: 100;
         
         h1 {
             font-size: 50px;
@@ -44,6 +43,10 @@ body {
             line-height: 138px;
             text-align: center;
             
+        }
+        
+        li {
+            float: left;
         }
         
         .header-menu {
@@ -91,8 +94,33 @@ body {
     /* ここからカルーセル */
     
     .carousel {
-        height: 500px;
+        height: 840px;
         background-color: gray;
+        width: 100%;
+        overflow: hidden;
+        z-index: 1;
+        
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+        }
+        
+        img {
+            width: 100%;
+        }
+        
+        .slick-dots {
+            position: relative;
+            bottom: 300px;
+        }
+        
+        .dots-wrapper {
+            height: 20px;
+            width: 100%;
+        }
     }
     
     /* ここからfooter */
@@ -109,6 +137,7 @@ body {
         
         li {
             padding: 0 45px;
+            float: left;
         }
         
         i {
