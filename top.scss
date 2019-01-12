@@ -4,7 +4,6 @@ body {
     
     background-color: gray;
     margin: 0;
-    height: 10000px;
     
     .inner {
         width: 1280px;
@@ -98,14 +97,12 @@ body {
         background-color: gray;
         width: 100%;
         overflow: hidden;
-        z-index: 1;
+        z-index: 0;
+        position: fixed;
         
         ul {
             margin: 0;
             padding: 0;
-        }
-        
-        li {
         }
         
         img {
@@ -123,12 +120,25 @@ body {
         }
     }
     
+    .carousel-blank {
+        height: 840px;
+    }
+    
+    /* ここからsnap */
+    
+    .snap {
+        background-color: red;
+        height: 1000px;
+        position: relative;
+    }
+    
     /* ここからfooter */
     
     footer {
         background-color: white;
         height: 196px;
         padding: 0 0 53px 0;
+        position: relative;
         
         ul {
             width: 400px; /* 子要素がfloatしてるのでulに高さはない */

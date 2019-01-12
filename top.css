@@ -3,9 +3,9 @@ body {
   /* ここから共通設定 */
   background-color: gray;
   margin: 0;
-  height: 10000px;
   /* ここからheader */
   /* ここからカルーセル */
+  /* ここからsnap */
   /* ここからfooter */ }
   body .inner {
     width: 1280px;
@@ -65,7 +65,8 @@ body {
     background-color: gray;
     width: 100%;
     overflow: hidden;
-    z-index: 1; }
+    z-index: 0;
+    position: fixed; }
     body .carousel ul {
       margin: 0;
       padding: 0; }
@@ -77,10 +78,17 @@ body {
     body .carousel .dots-wrapper {
       height: 20px;
       width: 100%; }
+  body .carousel-blank {
+    height: 840px; }
+  body .snap {
+    background-color: red;
+    height: 1000px;
+    position: relative; }
   body footer {
     background-color: white;
     height: 196px;
-    padding: 0 0 53px 0; }
+    padding: 0 0 53px 0;
+    position: relative; }
     body footer ul {
       width: 400px;
       /* 子要素がfloatしてるのでulに高さはない */
