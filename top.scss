@@ -31,6 +31,7 @@ body {
         position: fixed;
         top: 0;
         z-index: 100;
+        transition: .6s;
         
         h1 {
             font-size: 50px;
@@ -90,6 +91,21 @@ body {
         
     }
     
+    /* 下のクラスはヘッダのアニメーション用 */
+         
+    .fixed {
+        height: 70px;
+        
+        h1 {
+            display: none;
+        }
+        
+        .header-menu {
+            padding-top: 20px;
+            
+        }
+    }
+        
     /* ここからカルーセル */
     
     .carousel {

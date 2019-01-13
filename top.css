@@ -4,6 +4,7 @@ body {
   background-color: gray;
   margin: 0;
   /* ここからheader */
+  /* 下のクラスはヘッダのアニメーション用 */
   /* ここからカルーセル */
   /* ここからsnap */
   /* ここからfooter */ }
@@ -24,7 +25,8 @@ body {
     background-color: rgba(255, 255, 255, 0.6);
     position: fixed;
     top: 0;
-    z-index: 100; }
+    z-index: 100;
+    transition: .6s; }
     body header h1 {
       font-size: 50px;
       position: absolute;
@@ -60,6 +62,12 @@ body {
     body header .icon-link {
       font-size: 30px;
       margin: 0 0 0 30px; }
+  body .fixed {
+    height: 70px; }
+    body .fixed h1 {
+      display: none; }
+    body .fixed .header-menu {
+      padding-top: 20px; }
   body .carousel {
     height: 840px;
     background-color: gray;
