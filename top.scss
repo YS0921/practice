@@ -185,8 +185,6 @@ body {
                     width: 200px;
                 }
             }
-            
-            
         }
         
         .snap-right {
@@ -199,23 +197,50 @@ body {
         
         .snap-list {
             width: 100%;
-        }
-        
-        ul {
-            float: left;
             padding: 0;
             height: 100%;
-        }
-        
-        li {
-            height: 50%;
-            margin: 5px;
-            float: left;
-            overflow: hidden;
-        }
-        
-        img {
-            height: 100%;
+            
+            li {
+                height: 50%;
+                margin: 5px;
+                float: left;
+                overflow: hidden;
+                
+                a {
+                    display: block;
+                    position: relative;
+                    height: 100%;
+                    
+                    img {
+                        height: 100%;
+                    }
+                    
+                    .mask {
+                        display: table;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 102%;
+                        height: 102%;
+                        background-color: rgba(69,69,69,0.9);
+                        opacity: 0;
+                        transition: all 0.3s;
+                        
+                        p {
+                            display:table-cell;
+                            vertical-align: middle;
+                            color: white;
+                            padding: 40px;
+                        }
+                    }
+                }
+            }
+            
+            li:hover {
+                .mask {
+                    opacity: 1;
+                }
+            }
         }
     }
     

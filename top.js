@@ -19,4 +19,5 @@ $(function(){
         autoplay: true,
         arrows: false
     });
+    
 });
