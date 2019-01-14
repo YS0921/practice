@@ -1,7 +1,6 @@
 @charset "UTF-8";
 body {
   /* ここから共通設定 */
-  background-color: gray;
   margin: 0;
   /* ここからheader */
   /* 下のクラスはヘッダのアニメーション用 */
@@ -73,7 +72,7 @@ body {
     background-color: gray;
     width: 100%;
     overflow: hidden;
-    z-index: 0;
+    z-index: -10;
     position: fixed; }
     body .carousel ul {
       margin: 0;
@@ -89,9 +88,52 @@ body {
   body .carousel-blank {
     height: 840px; }
   body .snap {
-    background-color: red;
-    height: 1000px;
-    position: relative; }
+    background-color: #454545;
+    height: 700px;
+    padding: 5px; }
+    body .snap .snap-box {
+      height: 100%;
+      float: left; }
+    body .snap .snap-left {
+      width: 25%; }
+      body .snap .snap-left li {
+        width: 100%; }
+    body .snap .snap-title {
+      display: table;
+      width: 25%;
+      color: white;
+      text-align: center;
+      letter-spacing: 2px; }
+      body .snap .snap-title .title-inner {
+        display: table-cell;
+        vertical-align: middle; }
+        body .snap .snap-title .title-inner h2 {
+          display: block; }
+        body .snap .snap-title .title-inner a {
+          display: block;
+          color: inherit;
+          border: solid 2px white;
+          padding: 10px 0;
+          margin: auto;
+          width: 200px; }
+    body .snap .snap-right {
+      width: 50%; }
+      body .snap .snap-right li {
+        width: 48%;
+        /* ここなんで50%だとうまくいかないのか謎 */ }
+    body .snap .snap-list {
+      width: 100%; }
+    body .snap ul {
+      float: left;
+      padding: 0;
+      height: 100%; }
+    body .snap li {
+      height: 50%;
+      margin: 5px;
+      float: left;
+      overflow: hidden; }
+    body .snap img {
+      height: 100%; }
   body footer {
     background-color: white;
     height: 196px;

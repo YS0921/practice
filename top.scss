@@ -1,8 +1,9 @@
+
+
 body {
     
     /* ここから共通設定 */
     
-    background-color: gray;
     margin: 0;
     
     .inner {
@@ -113,7 +114,7 @@ body {
         background-color: gray;
         width: 100%;
         overflow: hidden;
-        z-index: 0;
+        z-index: -10;
         position: fixed;
         
         ul {
@@ -143,9 +144,79 @@ body {
     /* ここからsnap */
     
     .snap {
-        background-color: red;
-        height: 1000px;
-        position: relative;
+        background-color: #454545;
+        height: 700px;
+        padding: 5px;
+        
+        .snap-box {
+            height: 100%;
+            float: left;
+        }
+        
+        .snap-left {
+            width: 25%;
+            
+            li {
+                width: 100%;
+            }
+        }
+        
+        .snap-title {
+            display: table;
+            width: 25%;
+            color: white;
+            text-align: center;
+            letter-spacing: 2px;
+            
+            .title-inner {
+                display: table-cell;
+                vertical-align: middle;
+                
+                h2 {
+                    display: block;
+                }
+                
+                a {
+                    display: block;
+                    color: inherit;
+                    border: solid 2px white;
+                    padding: 10px 0;
+                    margin: auto;
+                    width: 200px;
+                }
+            }
+            
+            
+        }
+        
+        .snap-right {
+            width: 50%;
+            
+            li {
+                width: 48%; /* ここなんで50%だとうまくいかないのか謎 */
+            }
+        }
+        
+        .snap-list {
+            width: 100%;
+        }
+        
+        ul {
+            float: left;
+            padding: 0;
+            height: 100%;
+        }
+        
+        li {
+            height: 50%;
+            margin: 5px;
+            float: left;
+            overflow: hidden;
+        }
+        
+        img {
+            height: 100%;
+        }
     }
     
     /* ここからfooter */
